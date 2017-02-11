@@ -1,0 +1,33 @@
+[
+	{
+		"fruit": "apple",
+		"id" : "f1",
+		"description": "Eat one everyday to keep the doctor away!",
+		"price": 12
+	},
+	{
+		"fruit": "grape",
+		"id" : "f2",
+		"description": "Wine is great, but grapes are even better.",
+		"price": 8
+	},
+	{
+		"fruit": "grapefruit",
+		"id" : "f3",
+		"description": "Pink or red, always healthy and delicious",
+		"price": 11
+	},
+	{
+		"fruit": "papaya",
+		"id" : "f4",
+		"description": "Super-popular for breakfast",
+		"price": 5
+	},
+	{
+		"fruit": "pineapple",
+		"id" : "f5",
+		"description": "Enjoy it(but don't forget to peel it first)",
+		"price": 4
+	}
+	
+]

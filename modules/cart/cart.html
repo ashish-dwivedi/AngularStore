@@ -1,0 +1,81 @@
+<div class= "home-container row" id= "cart">
+	<div class= "col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<span>Thanks for shopping at the Angular Store.</span>
+		<div>This is your shopping cart. Here you can edit the items, go back to the store, clear the cart or checkout.</div>
+	</div>
+	<div class= "cart-container col-lg-9 col-md-9 col-sm-9 col-xs-9" ng-if= "cvm.cartData.items.length">
+		<div class= "item-header cart row item-row">
+			<div class= "col-lg-2 col-md-2 col-sm-2 col-xs-2 table-row-item">
+				<label>Item</label>
+			</div>
+			<div class= "col-lg-7 col-md-7 col-sm-7 col-xs-7 table-row-item">
+				<label>Quantity</label>
+			</div>
+			<div class= "col-lg-2 col-md-2 col-sm-2 col-xs-2 table-row-item">
+				<label>Price</label>
+			</div>
+			<div class= "col-lg-1 col-md-1 col-sm-1 col-xs-1 table-row-item">
+			</div>
+		</div>	
+		<div class= "item-row row item-row" ng-repeat= "item in cvm.cartData.items">
+			<div class= "col-lg-2 col-md-2 col-sm-2 col-xs-2 table-row-item">
+				<span class= "text-capitalize">{{item.fruit}}</span>
+			</div>
+			<div class= "col-lg-7 col-md-7 col-sm-7 col-xs-7 table-row-item text-center quantity">
+				<input class= "quantity-input" ng-pattern="/^[0-9]*$/" type="text" name="quantity" ng-model= "item.quantity"/>
+				<button class= "add" ng-click= "cvm.modifyquantity(item, 'increase')">
+					<i class="material-icons add">add</i>
+				</button>
+				<button class= "remove" ng-click= "cvm.modifyquantity(item, 'reduce')">
+					<i class="material-icons remove">remove</i>
+				</button>
+			</div>
+			<div class= "col-lg-2 col-md-2 col-sm-2 col-xs-2 table-row-item text-center">
+				<span>{{cvm.storeConfig.currency}}{{item.price*item.quantity | number:2}}</span>
+			</div>
+			<div class= "col-lg-1 col-md-1 col-sm-1 col-xs-1 table-row-item text-center">
+				<i class="material-icons clear" ng-click= "cvm.removeItem(item)">clear</i>
+			</div>
+		</div>
+		<div class= "item-header cart row item-row">
+			<div class= "col-lg-2 col-md-2 col-sm-2 col-xs-2 table-row-item">
+				<label>Total</label>
+			</div>
+			<div class= "col-lg-7 col-md-7 col-sm-7 col-xs-7 table-row-item">
+				<label>{{cvm.cartData.totalCount}}</label>
+			</div>
+			<div class= "col-lg-2 col-md-2 col-sm-2 col-xs-2 table-row-item">
+				<label>{{cvm.storeConfig.currency}}{{cvm.cartData.totalPrice | number:2}}</label>
+			</div>
+			<div class= "col-lg-1 col-md-1 col-sm-1 col-xs-1 table-row-item">
+			</div>
+		</div>
+	</div>
+	<div class= "cart-container col-lg-9 col-md-9 col-sm-9 col-xs-9 error" ng-if= "!cvm.cartData.items.length">
+		Your cart is empty!
+	</div>
+	<div class= "buttons-container col-lg-3 col-md-3 col-sm-3 col-xs-3">
+		<button class= "back-to-store" ng-click= "cvm.goBack()">
+			<i class="material-icons keyboard_arrow_left">keyboard_arrow_left</i>
+			Back to store
+		</button>
+		<button class= "remove-from-cart" ng-click= "cvm.clearCart()" ng-disabled= "!cvm.cartData.items.length">
+			<i class="material-icons delete">delete</i>
+			Clear cart
+		</button>
+		<div class= "payment">
+			<button class= "payment-paypal">
+				<i class="material-icons check">check</i>
+				Check out using Paypal
+			</button>
+			<button class= "payment-google">
+				<i class="material-icons check">check</i>
+				Check out using Google
+			</button>
+		</div>
+		<div class= "payment-images">
+			<img src= "images/paypal.png" />
+			<img src= "images/google.png" />
+		</div>
+	</div>
+</div>

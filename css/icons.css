@@ -1,0 +1,45 @@
+.icon {
+	background: url('../icons/icons.png') no-repeat top left;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+	height: 50px;
+	width: 50px;
+}
+
+.icon.apple {
+	background-position: 0 0;
+}
+
+.icon.grape {
+	background-position: 0 -60px;
+}
+
+.icon.grapefruit {
+	background-position: 0 -120px;
+}
+
+.icon.papaya {
+	background-position: 0 -180px;
+}
+
+.icon.pineapple {
+	background-position: 0 -240px;
+}
+
+.icon.paypal {
+	background-position: 0 -300px;
+	width: 160px;
+}
+
+.icon.google {
+	background-position: 0 -341px;
+	width: 160px;
+}
+
+.icon.main-logo {
+	background-position: 0 -382px;
+	height: 44px;
+	vertical-align: middle;
+	margin-top: -10px;
+}

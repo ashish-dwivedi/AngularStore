@@ -1,0 +1,208 @@
+{
+	"apple" : {
+		"fruit" : "apple",
+		"tagline" : "Eat one everyday to keep doctor away!",
+		"ratedFields" : [
+			{
+				"field" : "Calories",
+				"rating" : "90",
+				"heading" : "",
+				"details" : ""
+			},
+			{
+				"field" : "Carotenoid",
+				"rating" : 0,
+				"heading" : "Negligible",
+				"details" : "Below 5% of the recommended daily value"
+			},
+			{
+				"field" : "Fiber",
+				"rating" : 2,
+				"heading" : "Average",
+				"details" : "Between 10and 20% of the recommended daily value"
+			},
+			{
+				"field" : "Folates",
+				"rating" : 0,
+				"heading" : "Negligible",
+				"details" : "Below 5% of the recommended daily value"
+			},
+			{
+				"field" : "Potassium",
+				"rating" : 1,
+				"heading" : "Low",
+				"details" : "Between 10and 20% of the recommended daily value"
+			},
+			{
+				"field" : "Vitamic C",
+				"rating" : 2,
+				"heading" : "Average",
+				"details" : "Between 10and 20% of the recommended daily value"
+			}
+		]
+	},
+	"grape" : {
+		"tagline" : "Wine is great, but grapes are even better.",
+		"ratedFields" : [
+			{
+				"field" : "Calories",
+				"rating" : "90",
+				"heading" : "",
+				"details" : ""
+			},
+			{
+				"field" : "Carotenoid",
+				"rating" : 0,
+				"heading" : "Negligible",
+				"details" : "Below 5% of the recommended daily value"
+			},
+			{
+				"field" : "Fiber",
+				"rating" : 2,
+				"heading" : "Average",
+				"details" : "Between 10and 20% of the recommended daily value"
+			},
+			{
+				"field" : "Folates",
+				"rating" : 0,
+				"heading" : "Negligible",
+				"details" : "Below 5% of the recommended daily value"
+			},
+			{
+				"field" : "Potassium",
+				"rating" : 1,
+				"heading" : "Low",
+				"details" : "Between 10and 20% of the recommended daily value"
+			},
+			{
+				"field" : "Vitamic C",
+				"rating" : 2,
+				"heading" : "Average",
+				"details" : "Between 10and 20% of the recommended daily value"
+			}
+		]
+	},
+	"grapefruit" : {
+		"tagline" : "Pink or red, always healthy and delicious",
+		"ratedFields" : [
+			{
+				"field" : "Calories",
+				"rating" : "90",
+				"heading" : "",
+				"details" : ""
+			},
+			{
+				"field" : "Carotenoid",
+				"rating" : 0,
+				"heading" : "Negligible",
+				"details" : "Below 5% of the recommended daily value"
+			},
+			{
+				"field" : "Fiber",
+				"rating" : 2,
+				"heading" : "Average",
+				"details" : "Between 10and 20% of the recommended daily value"
+			},
+			{
+				"field" : "Folates",
+				"rating" : 0,
+				"heading" : "Negligible",
+				"details" : "Below 5% of the recommended daily value"
+			},
+			{
+				"field" : "Potassium",
+				"rating" : 1,
+				"heading" : "Low",
+				"details" : "Between 10and 20% of the recommended daily value"
+			},
+			{
+				"field" : "Vitamic C",
+				"rating" : 2,
+				"heading" : "Average",
+				"details" : "Between 10and 20% of the recommended daily value"
+			}
+		]
+	},
+	"papaya" : {
+		"tagline" : "Super-popular for breakfast",
+		"ratedFields" : [
+			{
+				"field" : "Calories",
+				"rating" : "90",
+				"heading" : "",
+				"details" : ""
+			},
+			{
+				"field" : "Carotenoid",
+				"rating" : 0,
+				"heading" : "Negligible",
+				"details" : "Below 5% of the recommended daily value"
+			},
+			{
+				"field" : "Fiber",
+				"rating" : 2,
+				"heading" : "Average",
+				"details" : "Between 10and 20% of the recommended daily value"
+			},
+			{
+				"field" : "Folates",
+				"rating" : 0,
+				"heading" : "Negligible",
+				"details" : "Below 5% of the recommended daily value"
+			},
+			{
+				"field" : "Potassium",
+				"rating" : 1,
+				"heading" : "Low",
+				"details" : "Between 10and 20% of the recommended daily value"
+			},
+			{
+				"field" : "Vitamic C",
+				"rating" : 2,
+				"heading" : "Average",
+				"details" : "Between 10and 20% of the recommended daily value"
+			}
+		]
+	},
+	"pineapple" : {
+		"tagline" : "Enjoy it(but don't forget to peel it first)",
+		"ratedFields" : [
+			{
+				"field" : "Calories",
+				"rating" : "90",
+				"heading" : "",
+				"details" : ""
+			},
+			{
+				"field" : "Carotenoid",
+				"rating" : 0,
+				"heading" : "Negligible",
+				"details" : "Below 5% of the recommended daily value"
+			},
+			{
+				"field" : "Fiber",
+				"rating" : 2,
+				"heading" : "Average",
+				"details" : "Between 10and 20% of the recommended daily value"
+			},
+			{
+				"field" : "Folates",
+				"rating" : 0,
+				"heading" : "Negligible",
+				"details" : "Below 5% of the recommended daily value"
+			},
+			{
+				"field" : "Potassium",
+				"rating" : 1,
+				"heading" : "Low",
+				"details" : "Between 10and 20% of the recommended daily value"
+			},
+			{
+				"field" : "Vitamic C",
+				"rating" : 2,
+				"heading" : "Average",
+				"details" : "Between 10and 20% of the recommended daily value"
+			}
+		]
+	}
+}

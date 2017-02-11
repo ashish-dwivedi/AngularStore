@@ -1,0 +1,36 @@
+#details .rating-circle {
+	height: 20px;
+    width: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #d2d2d2;
+}
+
+#details .rating-circle.active {
+	background-color: orange;
+}
+
+#details .calories {
+	font-size: 30px;
+    font-weight: bolder;
+}
+
+#details .buttons-container button {
+	width: 100%;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+
+#details .buttons-container button.add-to-cart {
+	color: #fff;
+	background-color: green;
+}
+
+#details .buttons-container button.remove-from-cart {
+	color: #fff;
+	background-color: red;
+}
+
+#details button[disabled] {
+	cursor: not-allowed;
+}

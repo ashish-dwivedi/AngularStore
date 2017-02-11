@@ -1,0 +1,39 @@
+<div class= "home-container row" id= "home">
+	<div class= "welcome-message">
+Welcome to the Angular Store
+Please select the products you want and add them to your shopping cart.
+When you are done, click the shopping cart icon to review your order and check out.
+	</div>
+	<div class= "search-input">
+		<label>Search:</label>
+		<input type= "text" ng-model= "hvm.filterInput"/>
+	</div>
+	<div class= "items-container">
+		<div class= "item-header">
+			<i class="material-icons shopping_cart" ng-click= "hvm.proceedToCart()">shopping_cart</i>
+			<span>{{hvm.cartData.items.length}} {{hvm.cartData.items.length===1 ? 'item' : 'items'}}</span>
+			<span>{{hvm.storeConfig.currency}}{{hvm.cartData.totalPrice | number:2}}</span>
+		</div>
+		<div class= "item-row row" ng-repeat= "fruit in hvm.fruitData | filter:hvm.filterInput">
+			<div class= "col-lg-2 col-md-2 col-sm-2 col-xs-2 table-row-item image" ng-click= "hvm.goToDetails(fruit.fruit)">
+				<span class= "icon" ng-class= "fruit.fruit"></span>
+			</div>
+			<div class= "col-lg-6 col-md-6 col-sm-6 col-xs-6 table-row-item">
+				<span class= "fruit-name text-capitalize display-block">{{fruit.fruit}}</span>
+				<span class= "fruit-desc">{{fruit.description}}</span>
+				<i class="material-icons done_all float-right" ng-if= "fruit.selected">done_all</i>
+			</div>
+			<div class= "col-lg-2 col-md-2 col-sm-2 col-xs-2 table-row-item text-center">
+				<span>{{hvm.storeConfig.currency}}{{fruit.price | number:2}}</span>
+			</div>
+			<div class= "col-lg-2 col-md-2 col-sm-2 col-xs-2 add-to-cart table-row-item text-center cursor-pointer" ng-click= "hvm.addToCart(fruit)">
+				<span>Add to cart</span>
+			</div>
+		</div>
+		<div class= "item-header">
+			<i class="material-icons shopping_cart" ng-click= "hvm.proceedToCart()">shopping_cart</i>
+			<span>{{hvm.cartData.items.length}} {{hvm.cartData.items.length===1 ? 'item' : 'items'}}</span>
+			<span>{{hvm.storeConfig.currency}}{{hvm.cartData.totalPrice | number:2}}</span>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,80 @@
+@import url('home/home.css');
+@import url('item-details/item-details.css');
+@import url('cart/cart.css');
+@import url('icons.css');
+
+header {
+	line-height: 100px;
+    background-color: #d2d2d2;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.page-name {
+	font-weight: 900;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.display-block {
+	display: block;
+}
+
+.vertical-middle {
+	vertical-align: middle;
+}
+
+.error {
+	color: red;
+}
+
+.table-row-item {
+	border: 1px solid #d2d2d2;
+	height: 60px;
+	padding: 10px;
+}
+
+.item-header {
+	background-color: #d2d2d2;
+	text-align: right;
+	line-height: 35px;
+	padding-right: 15px;
+}
+
+.item-row {
+	width: 100%;
+    margin: 0
+}
+
+/*Material icon CSS start*/
+.material-icons {
+	cursor: pointer;
+	vertical-align: middle;
+	font-size: 20px;
+}
+
+.shopping_cart {
+	-moz-transform: scale(-1, 1);
+	-webkit-transform: scale(-1, 1);
+	-o-transform: scale(-1, 1);
+	-ms-transform: scale(-1, 1);
+	transform: scale(-1, 1);
+}
+
+.done_all {
+	color: green;
+}
+
+/*Material icon CSS end*/

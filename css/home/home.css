@@ -1,0 +1,28 @@
+#home .welcome-message {
+	white-space: pre;
+	color: rgb(41, 116, 226);
+}
+
+#home .items-container {
+	border: 1px solid #d2d2d2;
+	margin-top: 10px;
+}
+
+#home .add-to-cart {
+	color: rgb(41, 116, 226);
+	cursor: pointer;
+}
+
+#home .fruit-name {
+	color: rgb(41, 116, 226);
+	font-weight: bold;
+}
+
+#home .table-row-item.image {
+	text-align: center;
+}
+
+#home .table-row-item.image span {
+	transform: scale(0.75);
+    margin-top: -6px;
+}
