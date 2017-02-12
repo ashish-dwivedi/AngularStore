@@ -14,7 +14,7 @@ When you are done, click the shopping cart icon to review your order and check o
 			<span>{{hvm.cartData.items.length}} {{hvm.cartData.items.length===1 ? 'item' : 'items'}}</span>
 			<span>{{hvm.storeConfig.currency}}{{hvm.cartData.totalPrice | number:2}}</span>
 		</div>
-		<div class= "item-row row" ng-repeat= "fruit in hvm.fruitData | userInput:hvm.filterInput" ng-click= "hvm.goToDetails(fruit.fruit)">
+		<div class= "item-row row cursor-pointer" ng-repeat= "fruit in hvm.fruitData | userInput:hvm.filterInput" ng-click= "hvm.goToDetails(fruit.fruit)">
 			<div class= "col-lg-2 col-md-2 col-sm-2 col-xs-2 table-row-item image">
 				<span class= "icon" ng-class= "fruit.fruit"></span>
 			</div>
