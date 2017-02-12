@@ -80,6 +80,7 @@
 		}
 		
 		function goBack() {
+			$location.search({});
 			$location.path('/');
 		}
 		
