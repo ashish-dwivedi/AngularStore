@@ -46,6 +46,7 @@
 		}
 		
 		function addToCart(item) {
+			event.stopPropagation();
 			if(item.selected) {
 				item.selected = !item.selected;
 				for(var i=0; i<_this.cartData.items.length; i++) {
