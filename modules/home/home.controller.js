@@ -45,7 +45,7 @@
 			}
 		}
 		
-		function addToCart(item) {
+		function addToCart(item, event) {
 			event.stopPropagation();
 			if(item.selected) {
 				item.selected = !item.selected;
