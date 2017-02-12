@@ -35,6 +35,7 @@
 				for(var i=0; i<_this.cartData.items.length; i++) {
 					if(_this.cartData.items[i].fruit === _this.detailsData.id) {
 						_this.detailsData.isInCart = true;
+						_this.detailsData.quantity = _this.cartData.items[i].quantity;
 					}
 				}
 			}
