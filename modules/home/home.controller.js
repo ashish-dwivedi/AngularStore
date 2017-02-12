@@ -17,6 +17,7 @@
 		_this.addToCart = addToCart;
 		_this.goToDetails = goToDetails;
 		_this.proceedToCart = proceedToCart;
+		_this.goBack = goBack;
 		
 		function init() {
 			var cartData = JSON.parse(localStorage.getItem('AngularStoreCart'));
@@ -76,6 +77,10 @@
 		
 		function proceedToCart() {
 			$location.path('/cart');
+		}
+		
+		function goBack() {
+			$location.path('/');
 		}
 		
 		init();
