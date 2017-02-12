@@ -60,6 +60,7 @@
 		}
 		
 		function addToCart() {
+			thisFruit.quantity = 1;
 			_this.cartData.items.push(thisFruit);
 			_this.detailsData.isInCart = true;
 			_this.cartData.totalPrice = _this.cartData.totalPrice + thisFruit.price;
