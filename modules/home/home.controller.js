@@ -39,6 +39,7 @@
 				for(var j=0; j<_this.cartData.items.length; j++) {
 					if(_this.fruitData[i].id === _this.cartData.items[j].id) {
 						_this.fruitData[i].selected = true;
+						_this.fruitData[i].quantity = _this.cartData.items[j].quantity;
 					}
 				}
 			}
