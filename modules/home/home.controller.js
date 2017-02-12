@@ -50,7 +50,7 @@
 				for(var i=0; i<_this.cartData.items.length; i++) {
 					if(_this.cartData.items[i].id === item.id) {
 						_this.cartData.items.splice(i, 1);
-						_this.cartData.totalPrice = _this.cartData.totalPrice - item.price;
+						_this.cartData.totalPrice = _this.cartData.totalPrice - (item.price*item.quantity);
 						break;
 					}
 				}
