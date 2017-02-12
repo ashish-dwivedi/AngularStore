@@ -70,7 +70,7 @@
 		
 		function removeFromCart() {
 			_this.detailsData.isInCart = false;
-			_this.cartData.totalPrice = _this.cartData.totalPrice - (thisFruit.price*thisFruit.quantity);
+			_this.cartData.totalPrice = _this.cartData.totalPrice - (thisFruit.price*_this.detailsData.quantity);
 			for(var i=0; _this.cartData.items.length; i++) {
 				if(_this.cartData.items[i].id === thisFruit.id) {
 					_this.cartData.items.splice(i, 1);
